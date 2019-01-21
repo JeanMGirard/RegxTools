@@ -2,7 +2,7 @@ import re, yaml, json, ast
 from pathlib import Path
 
 
-class RegGen:
+class RegxGen:
     _config="regGen.yml"
     _regList={}
     _regTable={}
