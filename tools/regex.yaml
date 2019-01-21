@@ -1,0 +1,79 @@
+package: regex
+version: 1.0
+langage: python
+config:
+  print: true
+params:
+  - name: window
+    str: '{window}'
+    reg: '(?P<window>[0-9]*)'
+    type: int
+  - name: vFactor
+    str: '{vFactor}'
+    reg: '(?P<vFactor>[0-9]*)'
+    type: int
+items:
+  ADM: adm-{window}
+  DEMA: dema-{window}
+  AMA: ama
+  EMA: ema-{window}
+  T3: t3-{window}-{vFactor}
+#
+# modules:
+#   - name: averages
+#     path: maths/averages
+#     indicator:
+#       ADM:
+#         regex:    adm-{window}
+#       DEMA:
+#         regex:    dema-{window}
+#       AMA:
+#         regex:    ama
+#       EMA:
+#         regex:    ema-{window}
+#       T3:
+#         regex:    t3-{window}-{vFactor}
+#       TEMA:
+#         regex:    tema-{window}
+#       TRIMA:
+#         regex:    trima-{window}
+#       WMA:
+#         regex:    wma-{window}
+#       SMA:
+#         regex:    sma-{window}
+#       TYP:
+#         regex:    typ
+#       ATYP:
+#         regex:    atyp-{window}
+#       ATR:
+#         regex:    atr-{window}
+#       NATR:
+#         regex:    natr-{window}
+#
+#   - name: changes
+#     path: maths/changes
+#     indicator:
+#       STDCAST:
+#         regex:    stdcast-{window}
+#       RETURN:
+#         regex:    return-{window}
+#       ARETURN:
+#         regex:    areturn-{window}
+#       TRETURN:
+#         regex:    treturn-{window}
+#       TR:
+#         regex:    tr
+#       TR2:
+#         regex:    tr2
+#       DM:
+#         regex:    dm
+#       MOM:
+#         regex:    mom-{window}
+#       ROCR:
+#         regex:    rocr-{window}
+#       ROC:
+#         regex:    roc-{window}
+#       ROCP:
+#         regex:    rocp-{window}
+#       ROC100:
+#         regex:    roc100-{window}
